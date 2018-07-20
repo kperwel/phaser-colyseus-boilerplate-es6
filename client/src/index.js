@@ -3,12 +3,6 @@ import avatarImage from "./avatar.png";
 
 import { Client } from "colyseus.js";
 const client = new Client("ws://127.0.0.1:2657");
-
-// room.listen("players/:id", ({ path: {id, attribute}, value, operation }) => {
-//   console.log("attribute:", value, operation, id, attribute);
-// });
-
-
 class MainScene extends Scene {
   constructor() {
     super("mainScene");
@@ -51,13 +45,3 @@ const resizeGameToFullscreen = () => {
 };
 window.addEventListener("resize", resizeGameToFullscreen);
 window.addEventListener("load", resizeGameToFullscreen);
-
-// client.getAvailableRooms("game", function(rooms, err) {
-//     if (err) console.error(err);
-//     rooms.forEach(function(room) {
-//       console.log(room.roomId);
-//       console.log(room.clients);
-//       console.log(room.maxClients);
-//       console.log(room.metadata);
-//     });
-//   });
