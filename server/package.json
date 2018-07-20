@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "colyseus": "^0.9.12"
+    "colyseus": "^0.9.12",
+    "uws": "^10.148.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
